@@ -29,7 +29,7 @@ if (process.env.JAWSDB_URL) {
     // root: 3000,
     host: "localhost",
     user: "root",
-    password: "",
+    password: "2443Barclay",
     database: "burgers_db"
   });
 };
