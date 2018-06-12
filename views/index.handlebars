@@ -40,7 +40,9 @@
                     <div class="burgerLists">
 
                         <ul>
-                            {{#each burgers}} {{#unless devoured}} {{> burgers/devourBurg devoured=true}} {{/unless}} {{/each}}
+                            {{#each burgers}} {{#unless devoured}}
+                            {{this.burger_name}}
+                            {{/unless}} {{/each}}
                         </ul>
 
                     </div>
@@ -53,7 +55,9 @@
                     <div class="burgerLists">
 
                         <ul>
-                            {{#each burgers}} {{#if devoured}} {{> burgers/devourBurg devoured=false}} {{/if}} {{/each}}
+                            {{#each burgers}} {{#if devoured}} 
+                            {{this.burger_name}}
+                            {{/if}} {{/each}}
                         </ul>
 
                     </div>
